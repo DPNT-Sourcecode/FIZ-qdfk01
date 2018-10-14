@@ -12,7 +12,10 @@ public class FizzBuzzSolution {
             result += "buzz ";
 
         if (number > 10 && isIdentical(number))
-            result += "deluxe ";
+            if (number % 2 == 0)
+                result += "deluxe ";
+            else
+                result += "fake deluxe ";
 
         result = result.trim();
         result = result == "" ? number.toString() : result;

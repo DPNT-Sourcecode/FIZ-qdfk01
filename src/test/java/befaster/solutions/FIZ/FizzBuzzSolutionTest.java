@@ -69,27 +69,27 @@ public class FizzBuzzSolutionTest {
     }
 
     @Test
-    public void should_Return_deluxe_When_Greater_Than_10_And_Numbers_Identical_And_Not_Satisfying_fizz_And_buzz_Conditions() {
-        assertEquals("deluxe", fizzBuzzSolution.fizzBuzz(11));
+    public void should_Return_deluxe_When_Greater_Than_10_And_Numbers_Identical_And_Even_And_Not_Satisfying_fizz_And_buzz_Conditions() {
+        assertEquals("deluxe", fizzBuzzSolution.fizzBuzz(44));
         assertEquals("deluxe", fizzBuzzSolution.fizzBuzz(22));
         assertEquals("deluxe", fizzBuzzSolution.fizzBuzz(4444));
     }
 
     @Test
-    public void should_Return_fizz_deluxe_When_Greater_Than_10_And_Numbers_Identical_And_Satisfying_Only_fizz_Condition() {
-        assertEquals("fizz deluxe", fizzBuzzSolution.fizzBuzz(33));
+    public void should_Return_fizz_deluxe_When_Greater_Than_10_And_Numbers_Identical_And_Even_And_Satisfying_Only_fizz_Condition() {
+        assertEquals("fizz deluxe", fizzBuzzSolution.fizzBuzz(66));
         assertEquals("fizz deluxe", fizzBuzzSolution.fizzBuzz(666));
-        assertEquals("fizz deluxe", fizzBuzzSolution.fizzBuzz(9999));
+        assertEquals("fizz deluxe", fizzBuzzSolution.fizzBuzz(6666));
     }
 
     @Test
-    public void should_Return_buzz_deluxe_When_Greater_Than_10_And_Numbers_Identical_And_Satisfying_Only_buzz_Condition() {
-        assertEquals("buzz deluxe", fizzBuzzSolution.fizzBuzz(55));
-        assertEquals("buzz deluxe", fizzBuzzSolution.fizzBuzz(5555));
+    public void should_Return_buzz_fake_deluxe_When_Greater_Than_10_And_Numbers_Identical_And_Satisfying_Only_buzz_Condition() {
+        assertEquals("buzz fake deluxe", fizzBuzzSolution.fizzBuzz(55));
+        assertEquals("buzz fake deluxe", fizzBuzzSolution.fizzBuzz(5555));
     }
 
     @Test
-    public void should_Return_fizz_buzz_deluxe_When_Greater_Than_10_And_Numbers_Identical_And_Satisfying_fizz_buzz_Conditions() {
-        assertEquals("fizz buzz deluxe", fizzBuzzSolution.fizzBuzz(555));
+    public void should_Return_fizz_buzz_fake_deluxe_When_Greater_Than_10_And_Numbers_Identical_And_Odd_And_Satisfying_fizz_buzz_Conditions() {
+        assertEquals("fizz buzz fake deluxe", fizzBuzzSolution.fizzBuzz(555));
     }
 }

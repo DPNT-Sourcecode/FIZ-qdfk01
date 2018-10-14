@@ -76,6 +76,20 @@ public class FizzBuzzSolutionTest {
     }
 
     @Test
+    public void should_Return_buzz_deluxe_When_Even_Divisible_By_5_And_Contains_5_And_Not_Satisfying_fizz_deluxe() {
+        assertEquals("buzz deluxe", fizzBuzzSolution.fizzBuzz(50));
+        assertEquals("buzz deluxe", fizzBuzzSolution.fizzBuzz(250));
+        assertEquals("buzz deluxe", fizzBuzzSolution.fizzBuzz(5000));
+    }
+
+    @Test
+    public void should_Return_fizz_buzz_deluxe_When_Even_Divisible_By_3_And_5_And_Contains_3_And_5() {
+        assertEquals("fizz buzz deluxe", fizzBuzzSolution.fizzBuzz(3510));
+        assertEquals("fizz buzz deluxe", fizzBuzzSolution.fizzBuzz(5340));
+        assertEquals("fizz buzz deluxe", fizzBuzzSolution.fizzBuzz(1530));
+    }
+
+    @Test
     public void should_Return_fizz_fake_deluxe_When_Greater_Than_10_And_Numbers_Identical_And_Odd_And_Satisfying_Only_fizz_Condition() {
         assertEquals("fizz fake deluxe", fizzBuzzSolution.fizzBuzz(33));
         assertEquals("fizz fake deluxe", fizzBuzzSolution.fizzBuzz(999));

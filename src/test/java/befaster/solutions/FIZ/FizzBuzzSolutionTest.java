@@ -69,17 +69,10 @@ public class FizzBuzzSolutionTest {
     }
 
     @Test
-    public void should_Return_deluxe_When_Greater_Than_10_And_Numbers_Identical_And_Even_And_Not_Satisfying_fizz_And_buzz_Conditions() {
-        assertEquals("deluxe", fizzBuzzSolution.fizzBuzz(44));
-        assertEquals("deluxe", fizzBuzzSolution.fizzBuzz(22));
-        assertEquals("deluxe", fizzBuzzSolution.fizzBuzz(4444));
-    }
-
-    @Test
-    public void should_Return_fizz_deluxe_When_Greater_Than_10_And_Numbers_Identical_And_Even_And_Satisfying_Only_fizz_Condition() {
-        assertEquals("fizz deluxe", fizzBuzzSolution.fizzBuzz(66));
-        assertEquals("fizz deluxe", fizzBuzzSolution.fizzBuzz(666));
-        assertEquals("fizz deluxe", fizzBuzzSolution.fizzBuzz(6666));
+    public void should_Return_fizz_deluxe_When_Even_Divisible_By_3_And_Contains_3_And_Not_Satisfying_buzz_deluxe() {
+        assertEquals("fizz deluxe", fizzBuzzSolution.fizzBuzz(36));
+        assertEquals("fizz deluxe", fizzBuzzSolution.fizzBuzz(636));
+        assertEquals("fizz deluxe", fizzBuzzSolution.fizzBuzz(3666));
     }
 
     @Test

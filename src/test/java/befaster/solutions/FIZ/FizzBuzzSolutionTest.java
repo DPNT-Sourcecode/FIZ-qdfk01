@@ -70,9 +70,16 @@ public class FizzBuzzSolutionTest {
     }
 
     @Test
-    public void should_Return_Deluxe_When_Greater_Than_10_And_Numbers_Identical_And_Not_Satisfying_fizz_And_buzz_Conditions() {
+    public void should_Return_deluxe_When_Greater_Than_10_And_Numbers_Identical_And_Not_Satisfying_fizz_And_buzz_Conditions() {
         assertEquals("deluxe", fizzBuzzSolution.fizzBuzz(11));
         assertEquals("deluxe", fizzBuzzSolution.fizzBuzz(22));
         assertEquals("deluxe", fizzBuzzSolution.fizzBuzz(4444));
+    }
+
+    @Test
+    public void should_Return_fizz_deluxe_When_Greater_Than_10_And_Numbers_Identical_And_Not_Satisfying_fizz_And_buzz_Conditions() {
+        assertEquals("fizz deluxe", fizzBuzzSolution.fizzBuzz(33));
+        assertEquals("fizz deluxe", fizzBuzzSolution.fizzBuzz(666));
+        assertEquals("fizz deluxe", fizzBuzzSolution.fizzBuzz(9999));
     }
 }

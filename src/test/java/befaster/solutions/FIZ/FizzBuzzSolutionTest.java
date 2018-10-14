@@ -21,7 +21,7 @@ public class FizzBuzzSolutionTest {
 
     @Test
     public void should_Return_fizz_When_Divisible_Only_By_3() {
-        assertEquals("fizz", fizzBuzzSolution.fizzBuzz(3));
+        assertEquals("fizz", fizzBuzzSolution.fizzBuzz(6));
         assertEquals("fizz", fizzBuzzSolution.fizzBuzz(9));
         assertEquals("fizz", fizzBuzzSolution.fizzBuzz(18));
     }
@@ -52,13 +52,6 @@ public class FizzBuzzSolutionTest {
         assertEquals("fizz buzz", fizzBuzzSolution.fizzBuzz(60));
         assertEquals("fizz buzz", fizzBuzzSolution.fizzBuzz(90));
         assertEquals("fizz buzz", fizzBuzzSolution.fizzBuzz(6000));
-    }
-
-    @Test
-    public void should_Return_fizz_buzz_When_Divisible_By_3_Or_Contains_3_And_Divisible_By_5_Or_Contains_5() {
-        assertEquals("fizz buzz", fizzBuzzSolution.fizzBuzz(51));
-        assertEquals("fizz buzz", fizzBuzzSolution.fizzBuzz(35));
-        assertEquals("fizz buzz", fizzBuzzSolution.fizzBuzz(53));
     }
 
     @Test

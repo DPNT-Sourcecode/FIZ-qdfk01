@@ -41,6 +41,13 @@ public class FizzBuzzSolutionTest {
     }
 
     @Test
+    public void should_Return_buzz_When_Contains_5() {
+        assertEquals("buzz", fizzBuzzSolution.fizzBuzz(52));
+        assertEquals("buzz", fizzBuzzSolution.fizzBuzz(251));
+        assertEquals("buzz", fizzBuzzSolution.fizzBuzz(5008));
+    }
+
+    @Test
     public void should_Return_fizz_buzz_When_Divisible_By_3_And_5() {
         assertEquals("fizz buzz", fizzBuzzSolution.fizzBuzz(15));
         assertEquals("fizz buzz", fizzBuzzSolution.fizzBuzz(75));

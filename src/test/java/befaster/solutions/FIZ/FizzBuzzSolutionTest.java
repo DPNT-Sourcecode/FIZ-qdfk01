@@ -5,6 +5,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 
 public class FizzBuzzSolutionTest {
     private FizzBuzzSolution fizzBuzzSolution;
@@ -66,5 +67,12 @@ public class FizzBuzzSolutionTest {
         assertEquals("1", fizzBuzzSolution.fizzBuzz(1));
         assertEquals("7", fizzBuzzSolution.fizzBuzz(7));
         assertEquals("6001", fizzBuzzSolution.fizzBuzz(6001));
+    }
+
+    @Test
+    public void should_Return_Deluxe_When_Greater_Than_10_And_Numbers_Identical_And_Not_Satisfying_fizz_And_buzz_Conditions() {
+        assertEquals("deluxe", fizzBuzzSolution.fizzBuzz(11));
+        assertEquals("deluxe", fizzBuzzSolution.fizzBuzz(22));
+        assertEquals("deluxe", fizzBuzzSolution.fizzBuzz(4444));
     }
 }

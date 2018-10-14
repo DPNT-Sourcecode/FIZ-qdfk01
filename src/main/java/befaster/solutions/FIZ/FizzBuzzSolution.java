@@ -1,17 +1,16 @@
 package befaster.solutions.FIZ;
 
-import befaster.runner.SolutionNotImplementedException;
-
 public class FizzBuzzSolution {
 
     public String fizzBuzz(Integer number) {
+        String result = "";
         if (number % 3 == 0)
-            return "fizz";
+            result += "fizz ";
 
         if (number % 5 == 0)
-            return "buzz";
+            result += "buzz ";
 
-        throw new SolutionNotImplementedException();
+        return result.trim();
     }
 
 }

@@ -27,9 +27,23 @@ public class FizzBuzzSolutionTest {
     }
 
     @Test
-    public void should_Return_fizz_When_Divisible_Only_By_5() {
+    public void should_Return_buzz_When_Divisible_Only_By_5() {
         assertEquals("buzz", fizzBuzzSolution.fizzBuzz(5));
         assertEquals("buzz", fizzBuzzSolution.fizzBuzz(25));
         assertEquals("buzz", fizzBuzzSolution.fizzBuzz(5000));
+    }
+
+    @Test
+    public void should_Return_fizz_buzz_When_Divisible_By_3_And_5() {
+        assertEquals("fizz buzz", fizzBuzzSolution.fizzBuzz(15));
+        assertEquals("fizz buzz", fizzBuzzSolution.fizzBuzz(75));
+        assertEquals("fizz buzz", fizzBuzzSolution.fizzBuzz(6000));
+    }
+
+    @Test
+    public void should_Return_number_When_Not_Divisible_By_3_Or_5() {
+        assertEquals("1", fizzBuzzSolution.fizzBuzz(1));
+        assertEquals("7", fizzBuzzSolution.fizzBuzz(7));
+        assertEquals("6001", fizzBuzzSolution.fizzBuzz(6001));
     }
 }

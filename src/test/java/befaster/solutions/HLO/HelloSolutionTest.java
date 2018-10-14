@@ -20,9 +20,9 @@ public class HelloSolutionTest {
     }
 
     @Test
-    public void should_Return_Hello_World() {
-        String expected = "Hello, World!";
-        String parameter = "";
+    public void should_Return_Hello_Name() {
+        String parameter = "John";
+        String expected = "Hello, " + parameter + "!";
         String actual = helloSolution.hello(parameter);
         assertEquals(expected, actual);
     }

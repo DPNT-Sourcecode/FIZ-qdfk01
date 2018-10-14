@@ -35,8 +35,8 @@ public class FizzBuzzSolutionTest {
 
     @Test
     public void should_Return_buzz_When_Divisible_Only_By_5() {
-        assertEquals("buzz", fizzBuzzSolution.fizzBuzz(5));
-        assertEquals("buzz", fizzBuzzSolution.fizzBuzz(25));
+        assertEquals("buzz", fizzBuzzSolution.fizzBuzz(10));
+        assertEquals("buzz", fizzBuzzSolution.fizzBuzz(20));
         assertEquals("buzz", fizzBuzzSolution.fizzBuzz(5000));
     }
 
@@ -90,20 +90,25 @@ public class FizzBuzzSolutionTest {
     }
 
     @Test
-    public void should_Return_fizz_fake_deluxe_When_Greater_Than_10_And_Numbers_Identical_And_Odd_And_Satisfying_Only_fizz_Condition() {
+    public void should_Return_fizz_fake_deluxe_When_Odd_Divisible_By_3_And_Contains_3_And_Not_Satisfying_buzz_deluxe() {
         assertEquals("fizz fake deluxe", fizzBuzzSolution.fizzBuzz(33));
-        assertEquals("fizz fake deluxe", fizzBuzzSolution.fizzBuzz(999));
-        assertEquals("fizz fake deluxe", fizzBuzzSolution.fizzBuzz(9999));
+        assertEquals("fizz fake deluxe", fizzBuzzSolution.fizzBuzz(633));
+        assertEquals("fizz fake deluxe", fizzBuzzSolution.fizzBuzz(3663));
     }
 
     @Test
-    public void should_Return_buzz_fake_deluxe_When_Greater_Than_10_And_Numbers_Identical_And_Odd_And_Satisfying_Only_buzz_Condition() {
+    public void should_Return_buzz_fake_deluxe_When_Odd_Divisible_By_5_And_Contains_5_And_Not_Satisfying_fizz_deluxe() {
         assertEquals("buzz fake deluxe", fizzBuzzSolution.fizzBuzz(55));
-        assertEquals("buzz fake deluxe", fizzBuzzSolution.fizzBuzz(5555));
+        assertEquals("buzz fake deluxe", fizzBuzzSolution.fizzBuzz(155));
+        assertEquals("buzz fake deluxe", fizzBuzzSolution.fizzBuzz(5005));
     }
 
     @Test
-    public void should_Return_fizz_buzz_fake_deluxe_When_Greater_Than_10_And_Numbers_Identical_And_Odd_And_Satisfying_fizz_buzz_Conditions() {
-        assertEquals("fizz buzz fake deluxe", fizzBuzzSolution.fizzBuzz(555));
+    public void should_Return_fizz_buzz_fake_deluxe_When_Odd_Divisible_By_3_And_5_And_Contains_3_And_5() {
+        assertEquals("fizz buzz fake deluxe", fizzBuzzSolution.fizzBuzz(3525));
+        assertEquals("fizz buzz fake deluxe", fizzBuzzSolution.fizzBuzz(5355));
+        assertEquals("fizz buzz fake deluxe", fizzBuzzSolution.fizzBuzz(2535));
     }
+
+
 }
